@@ -10,6 +10,8 @@ class Bot:
         self.session = self.ssh()
 
 
+
+
     # secure shell into client
     def ssh(self):
         try:
@@ -26,6 +28,8 @@ class Bot:
         self.session.sendline(cmd)
         self.session.prompt()
         return self.session.before
+
+
 
 
 # send a command to all bots in the botnet
